@@ -1,0 +1,102 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+html,body
+{
+    height: 100%;
+}
+body
+{
+    display: grid;
+    font-family: Avenier,sans-serif;
+    color: black;
+}
+.btn
+{
+    position: relative;
+    margin: auto;
+    padding: 19px 22px;
+    transition: all.2s ease;
+    -webkit-transition: all.2s ease;
+    -moz-transition: all.2s ease;
+    -ms-transition: all.2s ease;
+    -o-transition: all.2s ease;
+}
+.btn::before
+{
+    content: '';
+    position:absolute;
+    top: 0;
+    left:0;
+    display: block;
+    border-radius: 28px;
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    -ms-border-radius: 28px;
+    -o-border-radius: 28px;
+    background: #28abb9;
+    width: 56px;
+    height: 56px;
+    opacity: .5;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+span
+{
+    position: relative;
+    font-size: 16px;
+    font-weight: 900;
+    color: black;
+    line-height: 18px;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+svg
+{
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: black;
+    stroke-width: 2px;
+    transform: translateX(-5px);
+    -webkit-transform: translateX(-5px);
+    -moz-transform: translateX(-5px);
+    -ms-transform: translateX(-5px);
+    -o-transform: translateX(-5px);
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+.btn:hover::before
+{
+    width: 100px;
+    background: #28abb9;
+    opacity: 1;
+}
+.btn:hover svg
+{
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+.btn:active
+{
+    transform: scale(0.96);
+    -webkit-transform: scale(0.96);
+    -moz-transform: scale(0.96);
+    -ms-transform: scale(0.96);
+    -o-transform: scale(0.96);
+}
