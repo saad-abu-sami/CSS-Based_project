@@ -10,7 +10,35 @@
 <body>
    <div class="payment">
       <div class="bg"></div>
-      <div class="card"></div>
+      <div class="card">
+         <img src="chip.png" alt="" class="chip">
+         <div class="logo">
+            <h2 class="bankName" contenteditable="true">
+               Bank Name
+            </h2>
+            <form action="">
+               <div class="inputBox">
+                  <span>Card No.</span>
+                  <input type="text" placeholder="0123 4567 8901 2345" maxlength="19">
+               </div>
+               <div class="inputBox">
+                  <span>Card Holder</span>
+                  <input type="text" placeholder="Mr Abc Defg">
+               </div>
+               <div class="group">
+                  <div class="inputBox">
+                     <span>Valid Thru</span>
+                     <input type="text" placeholder="MM/YY" maxlength="5">
+                  </div>
+                  <div class="inputBox">
+                     <span>CCV</span>
+                     <input type="password" placeholder="***" maxlength="4">
+                  </div>
+               </div>
+            </form>
+         </div>
+      </div>
+      <button class="btn">Confirm and Pay</button>
    </div>
 </body>
 </html>
