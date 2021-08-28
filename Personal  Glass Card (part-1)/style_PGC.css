@@ -1,23 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+* {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-family: 'Ubuntu', sans-serif;
+   font-family: "Ubuntu", sans-serif;
 }
-body{
+body {
    display: flex;
    justify-content: center;
    align-items: center;
    min-height: 100vh;
 }
-.card{
+.card {
    position: relative;
    display: flex;
    justify-content: center;
    align-items: center;
 }
-.card span{
+.card span {
    position: absolute;
    top: 0;
    background: #000;
@@ -39,19 +39,19 @@ body{
    -webkit-filter: blur(80px);
    opacity: 0.75;
 }
-.card span:nth-child(1){
+.card span:nth-child(1) {
    background: #01b2fe;
 }
-.card span:nth-child(2){
+.card span:nth-child(2) {
    background: #ff008c;
 }
-.card span:nth-child(3){
+.card span:nth-child(3) {
    background: #ffcd00;
 }
-.card span:nth-child(4){
+.card span:nth-child(4) {
    background: #00c456;
 }
-.card .glass{
+.card .glass {
    position: absolute;
    width: 450px;
    height: 300px;
@@ -66,10 +66,9 @@ body{
    display: flex;
    justify-content: flex-start;
    align-items: flex-end;
-
 }
-.card .glass::before{
-   content: '';
+.card .glass::before {
+   content: "";
    position: absolute;
    top: 0;
    left: -50%;
@@ -83,7 +82,7 @@ body{
    -ms-transform: skewX(345deg);
    -o-transform: skewX(345deg);
 }
-.card .glass h2{
+.card .glass h2 {
    padding: 20px;
    font-weight: 400;
    width: 100%;
@@ -91,7 +90,7 @@ body{
    color: #333;
    text-align: end;
 }
-.card .glass h2 i{
+.card .glass h2 i {
    font-weight: 300;
    font-size: 0.75em;
    font-style: none;
